@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [frontend mentor](https://www.frontendmentor.io/solutions/responsive-advice-generator-app-using-js-scss-DXBnDGkIgr)
-- Live Site URL: [live](https://abdallarahmah.github.io/Advice-generator-app/)
+- Live Site URL: (https://abdallarahmah.github.io/Advice-generator-app/index.html)
 
 ## My process
 
