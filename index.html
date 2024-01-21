@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Abdalla Rahmah" />
+    <meta name="keywords" content="HTML, CSS, Frontend Mentor" />
+    <meta name="description" content="Frontend Mentor challenge" />
+    <title>Advice generator app</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="title">ADVICE #<span id="advice-id">117</span></h1>
+        <q class="advice" id="advice-content"
+          >It is easy to sit up and take notice, what's difficult is getting up
+          and taking action.</q
+        >
+        <div class="divider">
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            class="mobile"
+            alt="divider line"
+          /><img
+            src="./images/pattern-divider-desktop.svg"
+            class="desktop"
+            alt="divider line"
+          />
+        </div>
+        <button
+          class="action-button"
+          id="advice-genrator"
+          aria-label="generate advice"
+        >
+          <span class="sr-only">generate advice</span>
+        </button>
+      </div>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

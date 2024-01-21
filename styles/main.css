@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218, 23%, 16%);
+}
+
+.container {
+  position: relative;
+  padding: 2.5rem;
+  padding-bottom: 3.75rem;
+  width: min(576px, 90%);
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 1rem;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 2rem;
+    padding-bottom: 3.25rem;
+  }
+}
+.container .title {
+  margin-bottom: 2rem;
+  color: hsl(150, 100%, 66%);
+  font-size: 0.925rem;
+  letter-spacing: 6px;
+}
+@media (max-width: 576px) {
+  .container .title {
+    margin-bottom: 1.75rem;
+  }
+}
+.container .advice {
+  color: hsl(193, 38%, 86%);
+  font-size: 1.75rem;
+  text-align: center;
+  line-height: 1.4;
+}
+@media (max-width: 576px) {
+  .container .advice {
+    font-size: 1.625rem;
+  }
+}
+.container .divider {
+  margin-top: 2rem;
+  margin-inline: auto;
+}
+@media (max-width: 576px) {
+  .container .divider {
+    margin-top: 1.75rem;
+  }
+}
+.container .divider img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.container .divider .mobile {
+  display: none;
+}
+@media (max-width: 576px) {
+  .container .divider .mobile {
+    display: block;
+  }
+}
+.container .divider .desktop {
+  display: block;
+}
+@media (max-width: 576px) {
+  .container .divider .desktop {
+    display: none;
+  }
+}
+.container .action-button {
+  position: absolute;
+  bottom: -1.75rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  transition: box-shadow 500ms ease-in-out;
+  cursor: pointer;
+}
+.container .action-button:hover {
+  box-shadow: 0 0 15px 5px hsl(150, 100%, 66%);
+}
+.container .action-button:after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-image: url("../images/icon-dice.svg");
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+@media (max-width: 576px) {
+  .container .action-button {
+    bottom: -1.5rem;
+    width: 3rem;
+  }
+}
+.container .action-button .sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}/*# sourceMappingURL=main.css.map */
